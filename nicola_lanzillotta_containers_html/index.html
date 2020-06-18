@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <header>
+        <img src="https://assets.aaonline.io/fullstack/html-css/micro-projects/appacademylogo.png"
+        alt="App-Academy Logo" />
+    
+        <nav>
+            <ul>
+                <li><a href="#description">Description</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#directions">Directions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h2 id="ingredients">Ingredients</h2>
+        <ul>
+            <li>2 cups of water</li>
+            <li>1 teaspoon of salt</li>
+            <li>1 1/2 cups Harina P.A.N (pre-cooked white maize meal)</li>
+            <li>1 teaspoon corn oil</li>
+        </ul>
+    </aside>
+
+    <section>
+
+    <h1>Arepas</h1>
+
+    <figure>
+        <img src="https://t1.uc.ltmcdn.com/en/images/1/3/6/how_to_make_arepas_with_corn_flour_7631_600.jpg"
+        alt="Bowl of Arepas" />
+        <figcaption><a href="https://en.wikipedia.org/wiki/Arepa">The history behind the Arepa</a></figcaption>
+    </figure>
+
+    <h2 id="description">Description</h2>
+    
+    <p>The arepa is a flat, dish-shaped, unleavened patty made of maize flour which can be grilled, fried or even boil.
+        Depending on what kind of meal {breakfast, lunch or dinner} can be filled in many ways. If serving for breakfast, my
+        favorite filling is scrambled eggs, or cheese and ham. Now, if they are to be served for lunch or dinner they go
+        perfectly with chicken, beef, pork, tuna or beans.</p>
+
+    <h2 id="directions">Directions</h2>
+
+    <ol>
+        <li>Wash your hands</li>
+        <li>In a medium bowl add water and salt. Mix until the salt is dissolved</li>
+        <li>Slowly add the harina P.A.N. Mix with your hands, making circular movements and breaking with your finger the lumps that
+        may form. Let rest 5 minutes to thicken</li>
+        <li>Preheat a non-stick 11-inch square griddle over medium heat. If you don't have a griddle you can use a skillet instead</li>
+        <li>After 5 minutes add the oil to the dough and work it in with your hands for 2 minutes. The dough should be firm enough
+        holds its shape without cracking when molded. If it is too soft add a little more of harina P.A.N; if too hard add a
+        little more water</li>
+        <li>Form balls and flatten them gently until they’re about 1/2-inch thick discs</li>
+        <li>Place the discs on the preheated griddle and cook the arepas for 5-7 minutes on each side or until lightly golden brown</li>
+        <li>Split each arepa in half and fill them with whatever you like: cheese, ham, egg, beans, chicken, beef, tuna ... your
+        creativity is the limit!</li>
+        <li>Serve hot</li>
+    </ol>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <form action="/reviews" method="post">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name">
+            <label for="rating">Rating</label>
+            1
+            <input type="radio" name="rating" value="1" checked>
+            2
+            <input type="radio" name="rating" value="2">
+            3
+            <input type="radio" name="rating" value="3">
+            4
+            <input type="radio" name="rating" value="4">
+            5
+            <input type="radio" name="rating" value="5">
+            <label for="expertise">Cooking Expertise</label>
+            <select id="expertise" name="expertise">
+                <option value="Select Cooking Expertise" disabled="true" selected="true">Select Cooking Expertise</option>
+                <option value="Sometimes Cook">Sometimes Cook</option>
+                <option value="Cook Everyday">Cook Everyday</option>
+                <option value="Cooking is a Hobby">Cooking is a Hobby</option>
+                <option value="Professional Chef">Professional Chef</option>
+            </select>
+            <label>
+                Review
+                <textarea name="review" cols="30" rows="10"></textarea>
+            </label>
+            <input type="submit" value="Submit Review">
+        </form>
+    </section>
+
+    <footer>
+    <p>Original Recipe by <a href="https://mommyshomecooking.com/how-to-make-arepas-venezolanas/">Mommy's Home Cooking</a></p>
+    </footer>
+
+</body>
+</html>
